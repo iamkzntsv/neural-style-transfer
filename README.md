@@ -16,7 +16,7 @@ $$\mathcal{L}_{content}(C, G) = \frac{1}{4n_{H}^{[l]} \times n_{W}^{[l]} \times 
 The style cost is defined as the *unnormalized cross covariance* between activation maps across channels.
 First we compute the *Gram matrix*:
 
-Let $a_{i,j,k}^[l] = $ activation at $(i,j,k)$
+Let $$a_{i,j,k}^[l] = $$
 
 The Gram matrix for a single layer of content and generated images is given as follows:
 $$ G_{(gram)kk'}^{[l](S)} = \sum_{i}^{n_{H}^{[l]}} sum_{j}^{n_{W}^{[l]}} a_{i,j,k}^{[l](S)} a_{i,j,k'}^{[l](S)}
