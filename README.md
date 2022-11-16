@@ -36,7 +36,7 @@ $$J_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \sum_{k}
 
 We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the style:
 
-$$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]}J_{style}^{[l]} (S,G)$$
+$$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]} (S,G)$$
 
 
 ### Total Cost
