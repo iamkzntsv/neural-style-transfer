@@ -1,4 +1,12 @@
+import numpy as np
+import tensorflow as tf
+import cv2
+import urllib
+from PIL import Image
+from io import BytesIO
+
 IMG_SIZE = (400, 400)
+
 
 # LOAD IMAGES
 def load_img_from_url(url):
@@ -33,7 +41,7 @@ style_image = load_img_from_url(
 style_image = tf.constant(np.reshape(style_image, ((1,) + style_image.shape)))
 print(f"Style image shape: {style_image.shape}")
 
-# Initialize the generated image as a noisy image slightly corelated with the content image,
+# Initialize the generated image as a noisy image slightly correlated with the content image,
 # this will help the content of both images to match more rapidly.
 generated_image = tf.Variable(tf.image.convert_image_dtype(content_image, tf.float32))
 noise = tf.random.uniform(tf.shape(generated_image), -0.25, 0.25)
@@ -41,6 +49,8 @@ generated_image = tf.add(generated_image, noise)
 generated_image = tf.clip_by_value(generated_image, clip_value_min=0.0, clip_value_max=1.0)
 generated_image = tf.Variable(generated_image)
 
+# The code for creating a plot
+"""
 # Show the 3 images in a row
 fig = plt.figure(figsize=(16, 4))
 
@@ -58,3 +68,4 @@ ax.title.set_text('Generated image')
 
 plt.savefig("inital.png")
 plt.show()
+"""

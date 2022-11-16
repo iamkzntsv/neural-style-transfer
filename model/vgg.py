@@ -6,10 +6,10 @@ INPUT_SHAPE = IMG_SIZE + (3,)
 
 class NST:
 
-    def __init__(self):
-        self.vgg = self.build()
+    def __init__(self, layer_names):
+        self.layer_names = layer_names
 
-    def build(self, layer_names):
+    def build(self):
         """
         Create a vgg model that will return a list of intermediate outputs values for the middle layers
 
@@ -32,7 +32,7 @@ class NST:
 
         vgg.trainable = False
 
-        outputs = [self.vgg.get_layer(layer[0]).output for layer in layer_names]
-        model = tf.keras.Model(self.vgg.input, outputs)
+        outputs = [vgg.get_layer(layer[0]).output for layer in self.layer_names]
+        model = tf.keras.Model(vgg.input, outputs)
 
         return model
