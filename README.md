@@ -34,6 +34,8 @@ We can get better results if the style is computed from multiple layers and then
 
 $$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]} (S,G)$$
 
+In this implementation all layers used for computing the style cost are assigned a value of $0.2$. Note that it is important that the sum of all layers is $1$.
+
 
 ### Total Cost
 
