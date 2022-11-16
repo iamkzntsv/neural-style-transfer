@@ -3,7 +3,7 @@ This repository contains my implementation of the [Neural Style Transfer paper](
 
 ## What is NST?
 
-This algorithm allows to transfer the style from one image (style image) to another (content image). The resulting (generated) image is initialized as a random noise sampled from the uniform/Gaussian distribution correlated with the content image. The model is then trained on the updated pixel values based on the loss between the generated image and the content and style images. Similarly to the original paper this version uses a 19-layer VGG network and is trained in 20000 epochs.
+This algorithm allows to transfer the style from one image (style image) to another (content image). The resulting (generated) image is initialized as a random noise sampled from the uniform/Gaussian distribution correlated with the content image. The model is then trained on the updated pixel values based on the loss between the generated image and the content and style images. This version uses a 19-layer VGG network and is trained for 20000 epochs.
 
 ## Loss Function
 ### Content Cost
