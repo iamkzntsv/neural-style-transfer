@@ -16,14 +16,24 @@ $$\mathcal{L}_{content}(C, G) = \frac{1}{4 \times n_{H}^{\[l\]} \times n_{W}^{\[
 The style cost is defined as the *unnormalized cross covariance* between activation maps across channels.
 First we compute the *Gram matrix*:
 
-Let $$a_{i,j,k}^{\[l\]} = $$
+The activation value of the feature map $k$ at point $i,j$ is defined as:
+
+$$a_{i,j,k}^{\[l\]}$$
 
 The Gram matrix for a single layer of content and generated images is given as follows:
 
 $$ G_{(gram)kk'}^{\[l\](S)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](S)} a_{i,j,k'}^{\[l\](S)} $$
-$$$$
+$$ G_{(gram)kk'}^{\[l\](G)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](G)} a_{i,j,k'}^{\[l\](G)} $$
 
-$$\mathcal{L}_{content}(S, G) = \frac{1}{4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]}}$$
+for each $kk'$
+
+More generally this is equal to:
+
+$$ G_{(gram)}^(A) = AA^{T}
+
+The style cost is computed as follows:
+
+$$\mathcal{L}_{style}(S, G) = \frac{1}{4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]}} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
 
 ### Total Cost
 
