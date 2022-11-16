@@ -9,7 +9,7 @@ Similarly to the original paper it uses a 19-layer VGG network.
 ### Content Cost
 The content cost is computed as a squared difference between activation maps of the content image $C$ and the generated image $G$. The feature maps are usually taken from the layer in the middle of the network.
 
-$$\mathcal{L}_{content}(C, G) = \frac{1}{n_{H}^{[l]} \times n_{W}^{[l]} \times n_{C}^{[l]}} (a^{[l]} - a^{[l]})^2$$
+$$\mathcal{L}_{content}(C, G) = \frac{1}{4 \times n_{H}^{[l]} \times n_{W}^{[l]} \times n_{C}^{[l]}} (a^{[l]} - a^{[l]})^2$$
 
 ### Style Cost
 
