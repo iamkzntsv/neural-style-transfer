@@ -33,8 +33,8 @@ $$ G_{(gram)}^(A) = AA^{T}
 
 The style cost is computed as follows:
 
-$$\mathcal{L}_{style}(S, G) = \frac{1}{4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]}} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
+$$\mathcal{L}_{style}(S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
 
 ### Total Cost
 
-$$\mathcal{L}_{total}(C, G) = \alpha \mathcal{L}_{content}(C, G) + \beta \mathcal{L}_{style}(S, G)$$
+$$\mathcal{L}_{style}(C, G) = \alpha \mathcal{L}_{style}(C, G) + \beta \mathcal{L}_{style}(S, G)$$
