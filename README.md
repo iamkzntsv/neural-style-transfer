@@ -27,7 +27,7 @@ for each $kk'$
 
 More generally this is equal to:
 
-$$ G_{(gram)}^(A) = AA^{T} $$ 
+$$ G_{(gram)}^{(A)} = AA^{T} $$ 
 
 The style cost is computed as follows:
 
