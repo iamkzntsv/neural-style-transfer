@@ -49,7 +49,7 @@ generated_image = tf.add(generated_image, noise)
 generated_image = tf.clip_by_value(generated_image, clip_value_min=0.0, clip_value_max=1.0)
 generated_image = tf.Variable(generated_image)
 
-# The code for creating a plot
+# The code for creating an initial plot
 """
 # Show the 3 images in a row
 fig = plt.figure(figsize=(16, 4))
