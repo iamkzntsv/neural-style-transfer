@@ -45,6 +45,7 @@ $$J_{total} (C, S, G) = \alpha J_{content} (C, G) + \beta J_{style} (S, G)$$
 Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_1](https://user-images.githubusercontent.com/49316611/202245901-86a635c4-4299-409c-912d-a7cdad7cb5bb.png)
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
+![result_3](https://user-images.githubusercontent.com/49316611/202261524-72937fe7-7365-4616-9af1-27296dd992a6.png)
 
 We can see that using different types of noise leads to slightly different results.
 
