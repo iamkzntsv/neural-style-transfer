@@ -20,8 +20,8 @@ Let $$a_{i,j,k}^[l] = $$
 
 The Gram matrix for a single layer of content and generated images is given as follows:
 
-$$ G_{(gram)kk'}^{\[l\](S)} = \sum_{i}^{n_{H}^{\[l\]}}$$
-$$  sum_{j}^{n_{W}^{[l]}} a_{i,j,k}^{[l](S)} a_{i,j,k'}^{[l](S)} $$
+$$ G_{(gram)kk'}^{\[l\](S)} = \sum_{i}^{n_{H}^{\[l\]}} sum_{j}^{n_{W}^{\[l\]}}$$
+$$ a_{i,j,k}^{[l](S)} a_{i,j,k'}^{[l](S)} $$
 
 $$\mathcal{L}_{content}(S, G) = \frac{1}{4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]}}$$
 
