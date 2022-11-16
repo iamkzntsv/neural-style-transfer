@@ -9,7 +9,7 @@ This algorithm allows to transfer the style from one image (style image) to anot
 ### Content Cost
 The content cost is computed as a squared difference between activation maps of the content image $C$ and the generated image $G$. The feature maps are usually taken from the layer in the middle of the network.
 
-$$\mathcal{L}_{content}(C, G) = \frac{1}{4 \times n_{H}^{\[l\]} \times n_{W}^{\[l]} \times n_{C}^{\[l\]}} \sum(a^{\[l\](C)} - a^{\[l\](G)})^2$$
+$$J_{content}(C, G) = \frac{1}{4 \times n_{H}^{\[l\]} \times n_{W}^{\[l]} \times n_{C}^{\[l\]}} \sum(a^{\[l\](C)} - a^{\[l\](G)})^2$$
 
 ### Style Cost
 
@@ -32,7 +32,7 @@ $$ G_{(gram)}^{(A)} = AA^{T} $$
 
 The style cost is computed as follows:
 
-$$\mathcal{L}_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
+$$J_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
 
 We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the style:
 
@@ -41,7 +41,7 @@ $$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]}J_{style}^{[l]} (S,G)$
 
 ### Total Cost
 
-$$\mathcal{L}_{total} (C, S, G) = \alpha \mathcal{L}_{content} (C, G) + \beta \mathcal{L}_{style} (S, G)$$
+$$J_{total} (C, S, G) = \alpha J_{content} (C, G) + \beta J_{style} (S, G)$$
 
 ## Results
 Here are some of the results of training the algorithm over 20,000 epochs.
