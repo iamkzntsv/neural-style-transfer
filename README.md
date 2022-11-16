@@ -3,8 +3,6 @@ This repository contains my implementation of the [Neural Style Transfer paper](
 
 Similarly to the original paper it uses a 19-layer VGG network.
 
-![](https://github.com/iamkzntsv/neural-style-transfer/blob/main/nst.gif)
-
 ## Loss Function
 ### Content Cost
 The content cost is computed as a squared difference between activation maps of the content image $C$ and the generated image $G$. The feature maps are usually taken from the layer in the middle of the network.
@@ -42,3 +40,4 @@ $$\mathcal{L}_{style}(C, S, G) = \alpha \mathcal{L}_{content}(C, G) + \beta \mat
 ## Results
 ![result_1](https://user-images.githubusercontent.com/49316611/202245901-86a635c4-4299-409c-912d-a7cdad7cb5bb.png)
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
+![](https://github.com/iamkzntsv/neural-style-transfer/blob/main/nst.gif)
