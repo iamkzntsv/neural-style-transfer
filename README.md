@@ -19,7 +19,7 @@ The activation value of the feature map $k$ at point $i,j$ is defined as:
 
 $$a_{i,j,k}^{\[l\]}$$
 
-The Gram matrix for a single layer of content and generated images is given as follows:
+The Gram matrix for a single layer of content and generated images is given as:
 
 $$ G_{(gram)kk'}^{\[l\](S)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](S)} a_{i,j,k'}^{\[l\](S)} $$
 $$ G_{(gram)kk'}^{\[l\](G)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](G)} a_{i,j,k'}^{\[l\](G)} $$
@@ -33,6 +33,11 @@ $$ G_{(gram)}^{(A)} = AA^{T} $$
 The style cost is computed as follows:
 
 $$\mathcal{L}_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
+
+We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the style:
+
+J_{style_overall} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]}J_{style}^{[l]} (S,G)
+
 
 ### Total Cost
 
