@@ -24,9 +24,9 @@ The Gram matrix for a single layer of content and generated images is given as f
 $$ G_{(gram)kk'}^{\[l\](S)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](S)} a_{i,j,k'}^{\[l\](S)} $$
 $$ G_{(gram)kk'}^{\[l\](G)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} a_{i,j,k}^{\[l\](G)} a_{i,j,k'}^{\[l\](G)} $$
 
-for each $kk'$
+for each $kk'$,
 
-More generally this is equal to:
+which is is equal to:
 
 $$ G_{(gram)}^{(A)} = AA^{T} $$ 
 
