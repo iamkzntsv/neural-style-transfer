@@ -45,10 +45,6 @@ Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
 
 This animation illustrates how the style transfer is performed starting from the original image+noise to the final artistic version.
-
 <p align="center">
-<img width="565" alt="i![nst](https://user-images.githubusercontent.com/49316611/202253930-a6ad52a5-900b-4fb3-9dd4-c44828455be8.gif)
-mage" src="">
+![nst](https://user-images.githubusercontent.com/49316611/202254073-813d856b-a34e-456f-b1cb-22e393e7b9d0.gif)
 </p>
-
-![Uploading nst.gif…]()
