@@ -14,7 +14,6 @@ $$\mathcal{L}_{content}(C, G) = \frac{1}{4 \times n_{H}^{\[l\]} \times n_{W}^{\[
 ### Style Cost
 
 The style cost is defined as the *unnormalized cross covariance* between activation maps across channels.
-First we compute the *Gram matrix*:
 
 The activation value of the feature map $k$ at point $i,j$ is defined as:
 
