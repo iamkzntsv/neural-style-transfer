@@ -1,7 +1,9 @@
 # Neural Style Transfer
 This repository contains my implementation of the [Neural Style Transfer paper](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf). The code is based on the explanation given in Andrew Ng's [Deep Learning Specialization](https://www.deeplearning.ai/courses/deep-learning-specialization/).
 
-Similarly to the original paper it uses a 19-layer VGG network.
+## What is NST?
+
+This algorithm allows to transfer the style from one image (style image) to another (content image). The resulting (generated) image is initialized as a random noise sampled from the uniform distribution correlated with the content image. The model is then trained on the updated pixel values based on the loss between the generated image and the content and style images. Similarly to the original paper this version uses a 19-layer VGG network and is trained in 20000 epochs.
 
 ## Loss Function
 ### Content Cost
