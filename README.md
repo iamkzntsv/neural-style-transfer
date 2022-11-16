@@ -30,7 +30,7 @@ The style cost is computed as follows:
 
 $$J_{style}(C, S, G) = \frac{1}{(4 \times n_{H}^{[l]} \times n_{W}^{[l]} \times n_{C}^{[l]})^2} \sum_{k} \sum_{k'} (G_{(gram)kk'}^{\[l\](S)} - G_{(gram)kk'}^{\[l\](G)})^2 $$
 
-We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the style:
+We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the overall style:
 
 $$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]} (S,G)$$
 
