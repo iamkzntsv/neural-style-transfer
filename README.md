@@ -37,4 +37,4 @@ $$\mathcal{L}_{style}(S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2} \
 
 ### Total Cost
 
-$$\mathcal{L}_{style}(C, G) = \alpha \mathcal{L}_{style}(C, G) + \beta \mathcal{L}_{style}(S, G)$$
+$$\mathcal{L}_{style}(S, G) = \alpha \mathcal{L}_{style}(S, G) + \beta \mathcal{L}_{style}(S, G)$$
