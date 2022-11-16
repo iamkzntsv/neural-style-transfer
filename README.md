@@ -36,12 +36,12 @@ $$\mathcal{L}_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2
 
 We can get better results if the style is computed from multiple layers and then combined. Each layer is weighted by some hyperparameter $\lambda$ which reflects how much the layer will contribute to the style:
 
-$$J_{style_overall} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]}J_{style}^{[l]} (S,G)$$
+$$J_{style-overall} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]}J_{style}^{[l]} (S,G)$$
 
 
 ### Total Cost
 
-$$\mathcal{L}_{total}(C, S, G) = \alpha \mathcal{L}_{content}(C, G) + \beta \mathcal{L}_{style}(S, G)$$
+$$\mathcal{L}_{total} (C, S, G) = \alpha \mathcal{L}_{content} (C, G) + \beta \mathcal{L}_{style} (S, G)$$
 
 ## Results
 Here are some of the results of training the algorithm over 20,000 epochs.
