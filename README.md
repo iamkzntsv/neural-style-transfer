@@ -40,6 +40,9 @@ $$\mathcal{L}_{style}(C, S, G) = \frac{1}{(4n_{H}^{[l]}n_{W}^{[l]}n_{C}^{[l]})^2
 $$\mathcal{L}_{total}(C, S, G) = \alpha \mathcal{L}_{content}(C, G) + \beta \mathcal{L}_{style}(S, G)$$
 
 ## Results
+Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_1](https://user-images.githubusercontent.com/49316611/202245901-86a635c4-4299-409c-912d-a7cdad7cb5bb.png)
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
+
+This animation illustrates how the style transfer is performed starting from the original image+noise to the final artistic version.
 ![](https://github.com/iamkzntsv/neural-style-transfer/blob/main/nst.gif)
