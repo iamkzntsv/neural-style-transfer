@@ -22,9 +22,7 @@ $$ G_{(gram)kk'}^{\[l\](G)} = \sum_{i}^{n_{H}^{\[l\]}} \sum_{j}^{n_{W}^{\[l\]}} 
 
 for each $kk'$, where $a_{i,j,k}^{\[l\]}$ is the activation value of the feature map $k$ at point $i,j$.
 
-
-
-which is is equal to:
+This is is equal to:
 
 $$ G_{(gram)}^{(A)} = AA^{T} $$ 
 
