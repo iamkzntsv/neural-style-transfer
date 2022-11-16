@@ -37,6 +37,8 @@ $$J_{style} (S,G) = \sum_{l} \lambda^{[l]} J_{style}^{[l]} (S,G)$$
 
 ### Total Cost
 
+Total cost combines the content and style costs and weights them by additional hyperparameters \alpha and \beta,
+
 $$J_{total} (C, S, G) = \alpha J_{content} (C, G) + \beta J_{style} (S, G)$$
 
 ## Results
