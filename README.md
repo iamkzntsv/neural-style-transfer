@@ -60,7 +60,7 @@ It can be seen that different values of alpha and beta slightly affect the final
 We can also see that using different types of noise leads to different results (left - uniform noise, right - gaussian noise):  
 
 <p align="center">
-<img width="200" alt="uniform" src="https://user-images.githubusercontent.com/49316611/202485847-c6501e35-b96a-4d9b-8eca-b23642c1f334.png">
+<img width="195" alt="uniform" src="https://user-images.githubusercontent.com/49316611/202485847-c6501e35-b96a-4d9b-8eca-b23642c1f334.png">
 <img width="200" alt="gaussian" src="https://user-images.githubusercontent.com/49316611/202485887-ec8f81a9-da3d-4578-8c74-72ee3c0a33ff.png">
 </p>
 
