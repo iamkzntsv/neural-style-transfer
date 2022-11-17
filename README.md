@@ -49,6 +49,16 @@ Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
 ![result_3](https://user-images.githubusercontent.com/49316611/202261524-72937fe7-7365-4616-9af1-27296dd992a6.png)
 
+It can be seen that different values of alpha and beta affect
+<p align="center">
+<img width="472" alt="content" src="https://user-images.githubusercontent.com/49316611/202462481-376e88e1-706d-4e13-aea4-57d094d1a17f.png">
+<img width="472" alt="style" src="https://user-images.githubusercontent.com/49316611/202462563-136ca8fc-7dfe-4541-ab11-5e0b2ef1a609.png">
+<img width="472" alt="ab1" src="https://user-images.githubusercontent.com/49316611/202462619-e4b7104e-b5b8-4645-b74b-4e4ded0b2ede.png">
+<img width="472" alt="ab2" src="https://user-images.githubusercontent.com/49316611/202462702-4e3bd248-9c1d-4615-83ab-8212d2c459ad.png">
+<img width="472" alt="ab3" src="https://user-images.githubusercontent.com/49316611/202462820-2656ebc6-cd03-496b-a758-2bfd98b84d13.png">
+</p>
+
+
 We can see that using different types of noise leads to slightly different results (upper image - uniform noise, lower image - gaussian noise).  
 
 <p align="center">
