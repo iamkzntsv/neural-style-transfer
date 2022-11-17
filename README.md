@@ -50,7 +50,7 @@ Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_3](https://user-images.githubusercontent.com/49316611/202261524-72937fe7-7365-4616-9af1-27296dd992a6.png)
 ![result_4](https://user-images.githubusercontent.com/49316611/202463977-c9b8631a-fadf-44c0-9f48-15c826b301d8.png)
 
-It can be seen that different values of alpha and beta slightly affect the final image
+It can be seen that different values of alpha and beta slightly affect the final image:
 <p align="center">
 <img width="300" alt="ab1" src="https://user-images.githubusercontent.com/49316611/202463047-bce0bebf-7c0b-4fb2-8c16-9c6c7ba31f09.png">
 <img width="300" alt="ab2" src="https://user-images.githubusercontent.com/49316611/202463060-5faa2538-d7e1-430b-97ae-dcd659564817.png">
@@ -58,7 +58,7 @@ It can be seen that different values of alpha and beta slightly affect the final
 </p>
 
 
-We can see that using different types of noise leads to different results (upper image - uniform noise, lower image - gaussian noise).  
+We can also see that using different types of noise leads to different results (upper image - uniform noise, lower image - gaussian noise):  
 
 <p align="center">
 <img width="472" alt="uniform" src="https://user-images.githubusercontent.com/49316611/202325281-86aa6920-9610-4872-9cd1-570c4953967e.png">
