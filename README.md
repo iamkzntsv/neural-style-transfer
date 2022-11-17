@@ -51,11 +51,11 @@ Here are some of the results of training the algorithm over 20,000 epochs.
 
 It can be seen that different values of alpha and beta affect
 <p align="center">
-<img width="472" alt="content" src="https://user-images.githubusercontent.com/49316611/202462481-376e88e1-706d-4e13-aea4-57d094d1a17f.png">
-<img width="472" alt="style" src="https://user-images.githubusercontent.com/49316611/202462563-136ca8fc-7dfe-4541-ab11-5e0b2ef1a609.png">
-<img width="472" alt="ab1" src="https://user-images.githubusercontent.com/49316611/202462619-e4b7104e-b5b8-4645-b74b-4e4ded0b2ede.png">
-<img width="472" alt="ab2" src="https://user-images.githubusercontent.com/49316611/202462702-4e3bd248-9c1d-4615-83ab-8212d2c459ad.png">
-<img width="472" alt="ab3" src="https://user-images.githubusercontent.com/49316611/202462820-2656ebc6-cd03-496b-a758-2bfd98b84d13.png">
+![content](https://user-images.githubusercontent.com/49316611/202463004-19b0fa12-172d-41e8-aa28-deb8b89fd555.png)
+![style_image](https://user-images.githubusercontent.com/49316611/202463018-08e5499d-0cf0-4319-b04f-31d6fa01d871.png)
+![alpha_beta](https://user-images.githubusercontent.com/49316611/202463047-bce0bebf-7c0b-4fb2-8c16-9c6c7ba31f09.png)
+![alpha_beta_2](https://user-images.githubusercontent.com/49316611/202463060-5faa2538-d7e1-430b-97ae-dcd659564817.png)
+![alpha_beta_3](https://user-images.githubusercontent.com/49316611/202463068-9a9ab6a0-d68e-494b-8a0f-2812979e4d2a.png)
 </p>
 
 
