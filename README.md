@@ -49,7 +49,10 @@ Here are some of the results of training the algorithm over 20,000 epochs.
 ![result_2](https://user-images.githubusercontent.com/49316611/202245909-c8166e7e-5bb9-4237-bd4d-d740994413a6.png)
 ![result_3](https://user-images.githubusercontent.com/49316611/202261524-72937fe7-7365-4616-9af1-27296dd992a6.png)
 
-We can see that using different types of noise leads to slightly different results.
+We can see that using different types of noise leads to slightly different results (upper image - uniform noise, lower image - gaussian noise).  
+
+<img width="300" alt="gif" src="https://user-images.githubusercontent.com/49316611/202324850-83fcef30-f068-4d5e-8265-6c30ead25bd9.png">
+<img width="300" alt="gif" src="https://user-images.githubusercontent.com/49316611/202324937-b2a96d74-dfa3-41c7-bd3c-cc43e8be9aac.png">
 
 This animation illustrates how the style transfer is performed starting from the original image+noise to the final artistic version.
 <p align="center">
