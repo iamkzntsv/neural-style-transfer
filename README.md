@@ -60,8 +60,9 @@ It can be seen that different values of alpha and beta slightly affect the final
 We can also see that using different types of noise leads to different results (left - uniform noise, right - gaussian noise):  
 
 <p align="center">
-<img width="472" alt="uniform" src="https://user-images.githubusercontent.com/49316611/202485259-a43f7d86-4766-4347-8ee4-1231eeb635d6.png">
-<img width="472" alt="gaussian" src="https://user-images.githubusercontent.com/49316611/202325270-bbdc530a-1202-4e42-a236-9d85a2457b37.png">
+<img width="472" alt="uniform" src="https://user-images.githubusercontent.com/49316611/202485847-c6501e35-b96a-4d9b-8eca-b23642c1f334.png">
+<img width="472" alt="gaussian" src="https://user-images.githubusercontent.com/49316611/202485887-ec8f81a9-da3d-4578-8c74-72ee3c0a33ff.png">
+</p>
 
 This animation illustrates how the style transfer is performed starting from the original image+noise to the final artistic version.
 <p align="center">
